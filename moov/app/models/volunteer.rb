@@ -9,4 +9,6 @@ class Volunteer < ActiveRecord::Base
   # validates :approved?
   # validates :leader?
   # validates :admin?
+
+  validates :interest, presence: true
 end
