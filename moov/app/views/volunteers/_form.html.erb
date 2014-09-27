@@ -17,20 +17,22 @@
   </div>
   <div class="field">
     <%= f.label :bday %><br>
-    <%= f.datetime_select :bday %>
+    <%= f.date_select :bday, { start_year: Date.today.year, end_year: Date.today.year - 100, order: [:month, :day, :year] } %>
+  </div>
+  <!--
+  <div class="field">
+    <#%= f.label :approved? %><br>
+    <#%= f.check_box :approved? %>
   </div>
   <div class="field">
-    <%= f.label :approved? %><br>
-    <%= f.check_box :approved? %>
+    <#%= f.label :leader? %><br>
+    <#%= f.check_box :leader? %>
   </div>
   <div class="field">
-    <%= f.label :leader? %><br>
-    <%= f.check_box :leader? %>
+    <#%= f.label :admin? %><br>
+    <#%= f.check_box :admin? %>
   </div>
-  <div class="field">
-    <%= f.label :admin? %><br>
-    <%= f.check_box :admin? %>
-  </div>
+  -->
   <div class="field">
     <%= f.label :email %><br>
     <%= f.text_field :email %>
