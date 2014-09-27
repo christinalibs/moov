@@ -1,6 +1,7 @@
 class Nonprofit < ActiveRecord::Base
-  has_one :interest, as: :interested
+  has_one :interest, as: :interested, dependent: :destroy
   validates :name, presence: true, uniqueness: true
 
-  validates :interest, presence: true
+  # TODO: nested form
+  # validates :interest, presence: true
 end

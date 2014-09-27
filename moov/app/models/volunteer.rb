@@ -1,5 +1,5 @@
 class Volunteer < ActiveRecord::Base
-  has_one :interest, as: :interested
+  has_one :interest, as: :interested, dependent: :destroy
 
   validates :name, presence: true
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -10,5 +10,6 @@ class Volunteer < ActiveRecord::Base
   # validates :leader?
   # validates :admin?
 
-  validates :interest, presence: true
+  # TODO: nested form
+  # validates :interest, presence: true
 end
