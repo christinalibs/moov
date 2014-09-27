@@ -21,11 +21,11 @@
   </div>
   <div class="field">
     <%= f.label :date %><br>
-    <%= f.datetime_select :date %>
+    <%= f.datetime_select :date, { ampm: true, order: [ :month, :day, :year ], start_year: Date.today.year } %>
   </div>
   <div class="field">
     <%= f.label :num_volunteers_needed %><br>
-    <%= f.number_field :num_volunteers_needed %>
+    <%= f.number_field :num_volunteers_needed, { min: 0 } %>
   </div>
   <div class="actions">
     <%= f.submit %>
