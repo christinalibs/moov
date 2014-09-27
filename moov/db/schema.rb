@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140927161739) do
+ActiveRecord::Schema.define(version: 20140927181611) do
+
+  create_table "interests", force: true do |t|
+    t.boolean  "farming"
+    t.boolean  "fitness"
+    t.boolean  "family"
+    t.boolean  "civic"
+    t.boolean  "arts"
+    t.boolean  "tech"
+    t.boolean  "education"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "volunteers", force: true do |t|
     t.string   "name"
