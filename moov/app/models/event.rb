@@ -1,4 +1,6 @@
 class Event < ActiveRecord::Base
+  has_one :interest, as: :interested
+
   validates :name, presence: true
   validates :location, presence: true
   validates :date, presence: true
