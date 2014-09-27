@@ -24,7 +24,7 @@
     <%= f.datetime_select :date, { ampm: true, order: [ :month, :day, :year ], start_year: Date.today.year } %>
   </div>
   <div class="field">
-    <%= f.label :num_volunteers_needed %><br>
+    <%= f.label :num_volunteers_needed, 'Number of Volunteers Needed' %><br>
     <%= f.number_field :num_volunteers_needed, { min: 0 } %>
   </div>
   <div class="actions">
