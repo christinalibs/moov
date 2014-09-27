@@ -11,16 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140927182046) do
+ActiveRecord::Schema.define(version: 20140927192043) do
 
   create_table "interests", force: true do |t|
-    t.boolean  "farming"
-    t.boolean  "fitness"
-    t.boolean  "family"
-    t.boolean  "civic"
-    t.boolean  "arts"
-    t.boolean  "tech"
-    t.boolean  "education"
+    t.boolean  "farming",    default: false
+    t.boolean  "fitness",    default: false
+    t.boolean  "family",     default: false
+    t.boolean  "civic",      default: false
+    t.boolean  "arts",       default: false
+    t.boolean  "tech",       default: false
+    t.boolean  "education",  default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
