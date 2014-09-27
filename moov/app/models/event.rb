@@ -1,5 +1,6 @@
 class Event < ActiveRecord::Base
   has_one :interest, as: :interested, dependent: :destroy
+  belongs_to :nonprofit
 
   validates :name, presence: true
   validates :location, presence: true
