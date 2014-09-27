@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :nonprofits
+
   resources :events
 
   resources :interests

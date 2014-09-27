@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140927192526) do
+ActiveRecord::Schema.define(version: 20140927193935) do
 
   create_table "events", force: true do |t|
     t.string   "name"
@@ -30,6 +30,12 @@ ActiveRecord::Schema.define(version: 20140927192526) do
     t.boolean  "arts",       default: false
     t.boolean  "tech",       default: false
     t.boolean  "education",  default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "nonprofits", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
