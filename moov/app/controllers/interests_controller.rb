@@ -4,7 +4,8 @@ class InterestsController < ApplicationController
   # GET /interests
   # GET /interests.json
   def index
-    @interests = Interest.all
+    @interested = find_interested
+    @interest   = @interested.interest
   end
 
   # GET /interests/1
@@ -24,7 +25,8 @@ class InterestsController < ApplicationController
   # POST /interests
   # POST /interests.json
   def create
-    @interest = Interest.new(interest_params)
+    @interested = find_interested
+    @interest = @interested.interest
 
     respond_to do |format|
       if @interest.save
@@ -70,5 +72,13 @@ class InterestsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def interest_params
       params.require(:interest).permit(:farming, :fitness, :family, :civic, :arts, :tech, :education, :interested_id, :interested_type)
+    end
+
+    def find_interested
+      params.each do |name, value|
+        if name =~ /(.+)_id$/
+          return $1.classify.constantize.find(value)
+        end
+      end
     end
 end

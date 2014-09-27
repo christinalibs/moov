@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  resources :interests
+  resources :subgroups, has_one: :interest
 
-  resources :subgroups
+  resources :nonprofits, has_one: :interest
 
-  resources :nonprofits
+  resources :events, has_one: :interest
 
-  resources :events
+  resources :volunteers, has_one: :interest
 
-  resources :volunteers
+  # resources :interests
 
   get 'static_pages/home'
   get 'static_pages/help'
