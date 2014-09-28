@@ -1,0 +1,81 @@
+/* GENERAL */
+
+html, body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+.well .box-center {
+	margin: 0 auto;
+	vertical-align: center;
+}
+
+.jumbotron {
+	margin-top: 0;
+}
+
+.navbar, .navbar-default {
+	margin-bottom: 0 !important;
+}
+
+.navbar-right > li:nth-child(4) {
+	margin-right: 5px;
+	
+}
+
+.navbar ul li {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+
+/* TYPOGRAPHY */
+
+.center {
+	text-align: center;
+}
+
+.jumbotron p.sub {
+	font-size: 16px;
+	color: #000;
+}
+
+
+.jumbotron h4 {
+	font-weight: 800;
+	color: #000;
+}
+
+.jumbotron h2,
+.jumbotron .h2 {
+	color:#000;
+}
+
+/* BUTTONS */
+
+.well .blue,
+.well-sm .blue,
+.well-lg .blue {
+	background-color: #62ADD2;
+	color: #fff !important;
+}
+
+.blue {
+	background-color: #62ADD2;
+	color: #fff !important;
+	border-radius: 5px;
+}
+
+.well .purple,
+.well-sm .blue,
+.well-lg .blue {
+	background-color: #9C59A3;
+	color: #fff !important;
+}
+
+.purple {
+	background-color: #9C59A3;
+	color: #fff !important;
+	border-radius: 5px;
+}
+
