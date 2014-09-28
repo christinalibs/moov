@@ -3869,7 +3869,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  /* padding: 9.5px 15px; */
+  padding: 0 30px;
   font-size: 19px;
   line-height: 21px;
   height: 40px;
@@ -4081,9 +4081,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  /* background-color: #4e5d6c; */
+  background-color: #fff;
   border-color: transparent;
-  margin-top: 10px;
+  padding-top: 10px;
+  height: 60px;
 }
 .navbar-default .navbar-brand {
   color: #ebebeb;
@@ -4097,12 +4098,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #ebebeb;
 }
 .navbar-default .navbar-nav > li > a {
+  border-radius: 5px;
   color: #666;
+  margin-right: 5px;
+}
+.navbar-default .navbar-nav > li:nth-child(3) {
+  margin-right: 5px;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #ebebeb;
-  background-color: #485563;
+  background-color: #cccccc;
+  color: #fff;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -5314,7 +5321,8 @@ a.list-group-item-danger.active:focus {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  /* background-color: #4e5d6c; */
+  background-color: #fff; 
+  color: #000;
   border: 1px solid transparent;
   border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);

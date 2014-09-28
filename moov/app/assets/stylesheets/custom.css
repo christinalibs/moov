@@ -11,7 +11,7 @@ html, body {
 }
 
 .jumbotron {
-	margin-top: 0;
+	margin-top: 30px;
 }
 
 .navbar, .navbar-default {
@@ -66,6 +66,11 @@ html, body {
 	border-radius: 5px;
 }
 
+.blue:hover {
+	opacity: .8 !important;
+	background-color: #9c59a3 !important;
+}
+
 .well .purple,
 .well-sm .blue,
 .well-lg .blue {
@@ -78,4 +83,11 @@ html, body {
 	color: #fff !important;
 	border-radius: 5px;
 }
+
+.purple:hover {
+	opacity: .8 !important;
+	background-color: #9c59a3 !important;
+}
+
+
 
