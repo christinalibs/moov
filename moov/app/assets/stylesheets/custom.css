@@ -29,6 +29,11 @@ html, body {
 	font-weight: 400;
 }
 
+.resimg {
+	width: 100%
+	height: auto;
+	display: block;
+}
 
 /* TYPOGRAPHY */
 
@@ -50,6 +55,18 @@ html, body {
 .jumbotron h2,
 .jumbotron .h2 {
 	color:#666;
+}
+
+.typ-eventtitle {
+	margin-top: 0;
+}
+
+.typ-event-footer {
+	margin-bottom: 0 !important;
+}
+
+.typ-section-head {
+	margin-bottom: 20px !important;
 }
 
 /* BUTTONS */
@@ -106,3 +123,11 @@ html, body {
 
 }
 
+/* EVENTS BOXES */
+
+.event {
+	background-color: #fff;
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	margin-bottom: 15px !important;
+}
