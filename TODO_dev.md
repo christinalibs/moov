@@ -8,12 +8,12 @@ Relationships among databases still need to be set up:
     * String name
     * Interest interest
     * TimeStamp bday_ts
-    * Event events
-    * NonProfit nonprofits
+    * Event events (0 or more)
+    * NonProfit nonprofits (0 or more)
     * Boolean is_approved
     * Boolean is_admin
     * String email
-    * Subgroup subgroups
+    * Subgroup subgroups (0 or more)
   - TODOs
     * Events relation
     * Nonprofits relation
@@ -22,7 +22,7 @@ Relationships among databases still need to be set up:
 
 * Interest
   - Fields
-    * * Polymorphic associations *
+    * _Polymorphic associations_
     * Boolean farming
     * Boolean fitness
     * Boolean family
@@ -30,9 +30,43 @@ Relationships among databases still need to be set up:
     * Boolean arts
     * Boolean tech
     * Boolean education
-  * If you ever need to add a new interest type, just run a migration *
+    * _If you ever need to add a new interest type, just run a migration_
   -TODOs
     * relations to others
 
 * Event
   - Fields
+    * String name
+    * String location
+    * TimeStamp date_ts
+    * Volunteer volunteers (1 or more)
+    * Integer num_volunteers_needed
+    * NonProfit nonprofit
+    * Interest interest
+  - TODOs
+    * Volunteers relation
+    * Nonprofit relation
+    * Interest relation
+
+* NonProfit
+  - Fields
+    * String name
+    * Interest interest
+    * Event events (0 or more)
+    * Volunteer volunteers (1 or more)
+    * Volunteer leader
+  - TODOs
+    * Interest relation
+    * Events relation
+    * Volunteer relation (volunteers and leader)
+
+* Subgroup
+  - Fields
+    * String name
+    * Volunteer volunteers (0 or more)
+    * Interest interest
+  - TODOs
+    * Volunteers relation
+    * Interest relation
+
+Other than that, basic pathing/routing needs to be done, as well as customizing the controllers if necessary
