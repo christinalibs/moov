@@ -19,3 +19,20 @@ Relationships among databases still need to be set up:
     * Nonprofits relation
     * Subgroups relation
     * Passwords and login
+
+* Interest
+  - Fields
+    * * Polymorphic associations *
+    * Boolean farming
+    * Boolean fitness
+    * Boolean family
+    * Boolean civic
+    * Boolean arts
+    * Boolean tech
+    * Boolean education
+  * If you ever need to add a new interest type, just run a migration *
+  -TODOs
+    * relations to others
+
+* Event
+  - Fields
