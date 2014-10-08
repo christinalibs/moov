@@ -3,6 +3,7 @@
 html, body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
+	color: #666 !important;
 }
 
 .well .box-center {
@@ -11,7 +12,7 @@ html, body {
 }
 
 .jumbotron {
-	margin-top: 0;
+	margin-top: 30px;
 }
 
 .navbar, .navbar-default {
@@ -37,18 +38,18 @@ html, body {
 
 .jumbotron p.sub {
 	font-size: 16px;
-	color: #000;
+	color: #666;
 }
 
 
 .jumbotron h4 {
 	font-weight: 800;
-	color: #000;
+	color: #666;
 }
 
 .jumbotron h2,
 .jumbotron .h2 {
-	color:#000;
+	color:#666;
 }
 
 /* BUTTONS */
@@ -66,6 +67,11 @@ html, body {
 	border-radius: 5px;
 }
 
+.blue:hover {
+	opacity: .8 !important;
+	background-color: #9c59a3 !important;
+}
+
 .well .purple,
 .well-sm .blue,
 .well-lg .blue {
@@ -77,5 +83,26 @@ html, body {
 	background-color: #9C59A3;
 	color: #fff !important;
 	border-radius: 5px;
+}
+
+.purple:hover {
+	opacity: .8 !important;
+	background-color: #9c59a3 !important;
+}
+
+@media (max-width: 767px) {
+
+	.purple {
+		background-color: #fff;
+		color: #666 !important;
+		border-radius: 0;
+	}
+
+	.blue {
+		background-color: #fff;
+		color: #666 !important;
+		border-radius: 0;
+	}
+
 }
 
