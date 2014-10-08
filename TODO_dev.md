@@ -1,5 +1,5 @@
 # Development TODOs
-## Compiled by Leo Rudberg (LOZORD) in October 2014
+### Compiled by Leo Rudberg (LOZORD) in October 2014
 
 During Design Like Mad, I set up all of the databases that the project will be using.
 Relationships among databases still need to be set up:
@@ -18,7 +18,8 @@ Relationships among databases still need to be set up:
     * Events relation
     * Nonprofits relation
     * Subgroups relation
-    * Passwords and login
+    * Passwords and login (**secure!**)
+    * Add picture, bio, etc.
 
 * Interest
   - Fields
@@ -31,7 +32,7 @@ Relationships among databases still need to be set up:
     * Boolean tech
     * Boolean education
     * _If you ever need to add a new interest type, just run a migration_
-  -TODOs
+  - TODOs
     * relations to others
 
 * Event
@@ -70,3 +71,12 @@ Relationships among databases still need to be set up:
     * Interest relation
 
 Other than that, basic pathing/routing needs to be done, as well as customizing the controllers if necessary
+
+### Other things requested by Christina and Karen
+* Calendar page that shows:
+  - RSVPd events
+  - Invited events (i.e. user has not given response yet)
+  - Suggested events (based on interest, subgroups, and nonprofits followed by user/volunteer)
+  - ???
+
+* Mobile compatability?
