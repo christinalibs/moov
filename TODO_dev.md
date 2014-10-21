@@ -12,6 +12,7 @@ Relationships among databases still need to be set up:
     * NonProfit nonprofits (0 or more)
     * Boolean is_approved
     * Boolean is_admin
+    * Boolean is_leader
     * String email
     * Subgroup subgroups (0 or more)
   - TODOs
@@ -71,6 +72,7 @@ Relationships among databases still need to be set up:
     * Interest relation
 
 Other than that, basic pathing/routing needs to be done, as well as customizing the controllers if necessary
+Also, remember to do validations!!!
 
 ### Other things requested by Christina and Karen
 * Calendar page that shows:
